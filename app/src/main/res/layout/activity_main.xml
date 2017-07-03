@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fmatos.samples.hud.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/rocket_diamonds" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/transparentGray"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/test_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:padding="10dp"
+                android:textSize="40sp"
+                android:text="asdas"
+                android:visibility="gone"
+                tools:text="Test"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/ip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="20sp"
+                tools:text="1.1.1.1" />
+
+            <TextView
+                android:id="@+id/clock_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fontFamily="@font/dseg7classic"
+                android:padding="10dp"
+                android:textSize="40sp"
+                tools:text="24/5" />
+
+            <TextView
+                android:id="@+id/clock_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fontFamily="@font/dseg7classic"
+                android:paddingTop="10dp"
+                android:textSize="220sp"
+                tools:text="!7:46" />
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
