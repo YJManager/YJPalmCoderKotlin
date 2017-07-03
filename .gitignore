@@ -53,3 +53,46 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+###############
+
+# Maven dependency files
+
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+*.sw?
+.#*
+*#
+*~
+*.sublime-*
+
+# Build Artifacts
+
+.gradle/
+build/
+target/
+bin/
+gen/
+
+# Local Configuration File
+
+local.properties
+
+# Eclipse Project Files
+
+.classpath
+.project
+.settings/
+.springBeans
+.factorypath
+
+# IntelliJ IDEA Files
+
+*.iml
+*.ipr
+*.iws
+*.idea
+
+README.html
